@@ -1,0 +1,14 @@
+@import "fonts.scss";
+
+$primary-text-color: #846219;
+$secondary-text-color: #716565;
+$tertiary-text-color: #FFFFFF;
+
+$primary-background-color: #e9e9e9;
+$secondary-background-color: #506FA9;
+
+html, body {
+    font-family: 'Roboto Condensed', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
