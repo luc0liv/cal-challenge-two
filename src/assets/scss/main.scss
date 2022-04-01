@@ -1,7 +1,59 @@
-@import "fonts.scss";
+@import "globals.scss";
 
-html, body {
-    font-family: 'Roboto Condensed', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+$navbar-height: 10vh;
+$footer-height: 10vh;
+
+.section-one-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-background-color;
+  height: 100vh;
+  width: 100%;
+
+  .section-one-image {
+    mix-blend-mode: multiply;
+    width: 40%;
+  }
+
+  .section-one-title {
+    color: $secondary-text-color;
+    font-weight: bold;
+    font-size: 82.2px;
+    width: 30%;
+  }
+}
+
+.section-two-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary-background-color;
+  height: calc(100vh - 10px);
+
+  .section-two-image {
+    mix-blend-mode: multiply;
+    width: 60%;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    .section-two-title {
+      color: $tertiary-text-color;
+      font-weight: bold;
+      font-size: 69.2px;
+      line-height: 81.09px;
+      margin-bottom: 10px;
+    }
+    .section-two-description {
+      color: $tertiary-text-color;
+      font-weight: lighter;
+      font-size: 48.2px;
+      line-height: 56.48px;
+    }
+  }
 }
