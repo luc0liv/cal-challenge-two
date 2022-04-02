@@ -1,5 +1,5 @@
 <template>
-  <section class="footer-container">
+  <footer class="footer-container">
     <div class="social-wrapper">
       <p class="social-title">Follow us</p>
       <div class="social-icons">
@@ -22,7 +22,7 @@
         2490 Leisure Lane San Luis Obispo California
       </p>
     </div>
-  </section>
+  </footer>
 </template>
 
 <script lang="ts">
