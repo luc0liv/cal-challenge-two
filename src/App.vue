@@ -3,8 +3,5 @@
 </template>
 
 <style lang="scss">
-* {
-  padding: 0;
-  margin: 0;
-}
+@import "@/assets/scss/globals.scss";
 </style>
