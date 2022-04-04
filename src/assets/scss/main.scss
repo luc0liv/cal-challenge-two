@@ -1,59 +1,109 @@
 @import "globals.scss";
 
-$navbar-height: 10vh;
-$footer-height: 10vh;
-
 .section-one-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background-color: $primary-background-color;
   height: 100vh;
-  width: 100%;
+  padding: 2.5rem;
 
   .section-one-image {
     mix-blend-mode: multiply;
-    width: 40%;
+    width: 17.8125rem;
+    margin-top: -4rem;
+
+    @media screen and(min-width: 1024px) {
+      width: 50%;
+    }
   }
 
   .section-one-title {
     color: $secondary-text-color;
     font-weight: bold;
-    font-size: 82.2px;
-    width: 30%;
+    font-size: 3.325rem;
+    line-height: 3.8963rem;
+
+    @media screen and(min-width: 768px) {
+      width: 40%;
+    }
+
+    @media screen and(min-width: 1024px) {
+      font-size: 5.1375rem;
+      line-height: 6.0206rem;
+    }
   }
 }
 
 .section-two-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   background-color: $secondary-background-color;
-  height: calc(100vh - 10px);
+  background-image: url("@/assets/images/tape-2.png");
+  background-blend-mode: multiply;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5rem 0rem;
+
+  @media screen and (max-width: 767px) {
+    justify-content: flex-end;
+    padding: 1rem 0rem;
+    background-image: none;
+  }
 
   .section-two-image {
+    display: none;
     mix-blend-mode: multiply;
     width: 60%;
+
+    @media screen and (max-width: 767px) {
+      width: 16.1875rem;
+      height: auto;
+      display: block;
+    }
   }
 
   .text-container {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+    width: 50%;
+    padding: 2rem 2rem 2rem 6rem;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      padding: 4.75rem 1rem;
+    }
+
     .section-two-title {
       color: $tertiary-text-color;
       font-weight: bold;
-      font-size: 69.2px;
-      line-height: 81.09px;
-      margin-bottom: 10px;
+      font-size: 4.325rem;
+      line-height: 5.0681rem;
+      margin-bottom: 0.625rem;
+
+      @media screen and(max-width: 1023px) {
+        font-size: 2.575rem;
+        line-height: 3rem;
+      }
     }
     .section-two-description {
       color: $tertiary-text-color;
       font-weight: lighter;
-      font-size: 48.2px;
-      line-height: 56.48px;
+      font-size: 3.0125rem;
+      line-height: 3.53rem;
+
+      @media screen and(max-width: 1023px) {
+        font-size: 1.6375rem;
+        line-height: 1.9375rem;
+      }
     }
   }
 }

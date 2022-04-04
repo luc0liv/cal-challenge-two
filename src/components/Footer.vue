@@ -19,7 +19,8 @@
     <div class="contact-wrapper">
       <p class="contact-title">Contact</p>
       <p class="contact-address">
-        2490 Leisure Lane San Luis Obispo California
+        2490 Leisure Lane <br />
+        San Luis Obispo <br />California
       </p>
     </div>
   </footer>

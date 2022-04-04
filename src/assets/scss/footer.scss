@@ -1,55 +1,86 @@
 @import "globals.scss";
 
 p {
-    color: $secondary-text-color;
+  color: $secondary-text-color;
 }
 
 .footer-container {
-    background-color: $primary-background-color;
-    height: 20%;
-    padding: 5%;
-    
+  background-color: $primary-background-color;
+  height: 20%;
+  padding: 5%;
+
+  display: flex;
+  align-items: flex-start;
+  column-gap: 20%;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    padding-top: 2.5rem;
+  }
+
+  .social-wrapper {
     display: flex;
-    align-items: flex-start;
-    column-gap: 20%;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
 
-    .social-wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      row-gap: 15px;
+    .social-title {
+      color: $secondary-text-color;
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin-bottom: 1.0625rem;
 
-      .social-title {
-        color: $secondary-text-color;
-        font-size: 27.2px;
-        font-weight: bold;
-      }
-      .social-icons {
-        column-gap: 26px;
-        display: flex;
-        flex-direction: row;
-
-        .social-icon {
-            width: 38.61px
-        }
+      @media screen and (max-width: 767px) {
+        text-align: center;
       }
     }
+    .social-icons {
+      column-gap: 1.625rem;
+      display: flex;
+      flex-direction: row;
 
-    .contact-wrapper {
-        display: flex;
-        flex-direction: column;
-        row-gap: 15px;
-        width: 10%;
-
-        .contact-title {
-            color: $secondary-text-color;
-            font-size: 27.2px;
-            font-weight: bold;
-        }
-        .contact-address {
-            font-size: 1rem; 
-        }
+      .social-icon {
+        width: 2.4131rem;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      row-gap: 0;
+      align-items: center;
     }
   }
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .contact-title {
+      color: $secondary-text-color;
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin-bottom: 1.0625rem;
+
+      @media screen and (max-width: 767px) {
+        text-align: center;
+      }
+    }
+    .contact-address {
+      font-size: 1rem;
+      line-height: 18.98px;
+      @media screen and (max-width: 767px) {
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 50%;
+      row-gap: 0;
+    }
+  }
+}
